@@ -1,0 +1,119 @@
+/* Additional styles for Services Section */
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-family: 'Jost', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* About Section Styles */
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 41px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 30px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Section Styles */
+.contact {
+    background-color: var(--ast-global-color-4);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    font-size: 41px;
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* Footer Menu Styles */
+.footer-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu li a {
+    color: var(--ast-global-color-2);
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.footer-menu li a:hover {
+    color: var(--ast-global-color-0);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-toggle-icon {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--ast-global-color-2);
+    position: relative;
+}
+
+.menu-toggle-icon::before,
+.menu-toggle-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--ast-global-color-2);
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle-icon::before {
+    transform: translateY(-8px);
+}
+
+.menu-toggle-icon::after {
+    transform: translateY(8px);
+}
